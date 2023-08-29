@@ -128,7 +128,7 @@ export function ContactForm() {
         </Form.Label>
         <Form.Control
           {...register("firstName", { required: true })}
-          className={`rounded-t border-b ${
+          className={`rounded-b-none rounded-t border-b ${
             errors.firstName ? "border-red-600" : "border-zinc-300"
           } bg-zinc-100 px-3 py-4 focus:outline-none`}
           type="text"
@@ -145,7 +145,7 @@ export function ContactForm() {
         </Form.Label>
         <Form.Control
           {...register("lastName", { required: true })}
-          className={`rounded-t border-b ${
+          className={`rounded-b-none rounded-t border-b ${
             errors.lastName ? "border-red-600" : "border-zinc-300"
           } bg-zinc-100 px-3 py-4 focus:outline-none`}
           type="text"
@@ -162,7 +162,7 @@ export function ContactForm() {
         </Form.Label>
         <Form.Control
           {...register("email", { required: true })}
-          className={`rounded-t border-b ${
+          className={`rounded-b-none rounded-t border-b ${
             errors.email ? "border-red-600" : "border-zinc-300"
           } bg-zinc-100 px-3 py-4 focus:outline-none`}
           type="email"
@@ -180,7 +180,7 @@ export function ContactForm() {
         <Form.Control asChild>
           <select
             {...register("location", { required: true })}
-            className={`appearance-none rounded-t border-b ${
+            className={`appearance-none rounded-b-none rounded-t border-b ${
               errors.location ? "border-red-600" : "border-zinc-300"
             } bg-zinc-100 px-3 py-4 focus:outline-none`}
           >
@@ -205,7 +205,7 @@ export function ContactForm() {
         </Form.Label>
         <Form.Control
           {...register("startDate", { required: true })}
-          className={`w-full rounded-t border-b ${
+          className={`rounded-b-none rounded-t border-b ${
             errors.startDate ? "border-red-600" : "border-zinc-300"
           } bg-zinc-100 px-3 py-4 focus:outline-none`}
           type="date"
@@ -222,7 +222,7 @@ export function ContactForm() {
         </Form.Label>
         <Form.Control
           {...register("endDate", { required: true })}
-          className={`w-full rounded-t border-b ${
+          className={`rounded-b-none rounded-t border-b ${
             errors.endDate ? "border-red-600" : "border-zinc-300"
           } bg-zinc-100 px-3 py-4 focus:outline-none`}
           type="date"
@@ -240,7 +240,7 @@ export function ContactForm() {
         <Form.Control asChild>
           <textarea
             {...register("message", { required: true })}
-            className={`rounded-t border-b ${
+            className={`rounded-b-none rounded-t border-b ${
               errors.message ? "border-red-600" : "border-zinc-300"
             } resize-none bg-zinc-100 px-3 py-4 focus:outline-none`}
             rows={5}

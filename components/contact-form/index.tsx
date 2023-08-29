@@ -1,6 +1,7 @@
 "use client";
 
 import { Inter as Font } from "next/font/google";
+import Image from "next/image";
 import { useForm } from "react-hook-form";
 
 import { faArrowRight } from "@fortawesome/pro-regular-svg-icons";
@@ -117,6 +118,13 @@ export function ContactForm() {
           repellendus, quas laboriosam tenetur, delectus recusandae numquam
           voluptates omnis, aliquam molestiae magni!
         </span>
+        <Image
+          alt="BFT-01"
+          src="/images/BFT-01.jpg"
+          className="aspect-[2/1] w-full object-cover object-center"
+          width={1024}
+          height={576}
+        />
       </div>
       {/* First Name */}
       <Form.Field

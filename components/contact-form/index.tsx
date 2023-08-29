@@ -1,16 +1,13 @@
 "use client";
 
-import { Handlee as Font } from "next/font/google";
+import { Inter as Font } from "next/font/google";
 import { useForm } from "react-hook-form";
 
 import { faArrowRight } from "@fortawesome/pro-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as Form from "@radix-ui/react-form";
 
-const font = Font({
-  subsets: ["latin"],
-  weight: "400",
-});
+const font = Font({ subsets: ["latin"] });
 
 interface FormData {
   email: string;
@@ -109,7 +106,7 @@ export function ContactForm() {
     >
       <div className="col-span-full flex flex-col items-center justify-center">
         <h3
-          className="py-1.5 text-4xl font-black uppercase text-zinc-800"
+          className="py-1.5 text-3xl font-semibold text-zinc-800"
           style={font.style}
         >
           Contact Us
@@ -208,7 +205,7 @@ export function ContactForm() {
         </Form.Label>
         <Form.Control
           {...register("startDate", { required: true })}
-          className={`rounded-t border-b ${
+          className={`w-full rounded-t border-b ${
             errors.startDate ? "border-red-600" : "border-zinc-300"
           } bg-zinc-100 px-3 py-4 focus:outline-none`}
           type="date"
@@ -225,7 +222,7 @@ export function ContactForm() {
         </Form.Label>
         <Form.Control
           {...register("endDate", { required: true })}
-          className={`rounded-t border-b ${
+          className={`w-full rounded-t border-b ${
             errors.endDate ? "border-red-600" : "border-zinc-300"
           } bg-zinc-100 px-3 py-4 focus:outline-none`}
           type="date"
@@ -260,7 +257,7 @@ export function ContactForm() {
 
       {/* Submit */}
       <div className="col-span-full flex items-center justify-end px-3 py-2">
-        <Form.Submit className="flex w-max items-center gap-1 rounded bg-emerald-800 px-6 py-2 hover:bg-emerald-700">
+        <Form.Submit className="flex w-full items-center justify-center gap-1 rounded bg-zinc-800 px-6 py-2 hover:bg-emerald-700 md:w-max">
           <span className="text-zinc-50">Submit</span>
           <FontAwesomeIcon className="text-zinc-50" icon={faArrowRight} />
         </Form.Submit>

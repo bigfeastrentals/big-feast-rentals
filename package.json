@@ -15,6 +15,7 @@
     "@fortawesome/pro-regular-svg-icons": "^6.4.2",
     "@fortawesome/pro-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@radix-ui/react-form": "^0.0.3",
     "@reduxjs/toolkit": "^1.9.5",
     "@supabase/auth-helpers-nextjs": "^0.7.4",
     "@types/node": "20.5.0",
@@ -28,6 +29,8 @@
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.4",
+    "resend": "^1.0.0",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
   },
